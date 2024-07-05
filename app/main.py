@@ -26,7 +26,7 @@ app = Flask(__name__)
 
 app = Flask(__name__, static_folder='../public', template_folder='../templates')
 
-openai.api_key = 'sk-proj-xUDfiRSGjHKBA2W6hVciT3BlbkFJmgimYeh97Nu4JbnfdoO8'
+openai.api_key = 'sk-proj-GazU277GBU0gwE3HyGKAT3BlbkFJoVFLupwL2XODwT4yAek3'
 bot_token = '7081209694:AAG27dZPntfq19kXIUEWytkwubPBqSVGPC0'
 
 # MongoDB connection
@@ -1424,5 +1424,6 @@ def webhook():
 
 # Main function
 if __name__ == '__main__':
-    # Run the Flask app
-    app.run(host='0.0.0.0', debug=True)
+    # Run the Flask app on a different port, for example, 8080
+    app.run(host='0.0.0.0', port=8080, debug=True)
+

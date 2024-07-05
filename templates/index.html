@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekow - Your Academic Resource Assistant</title>
+  <link rel="icon" href="{{ url_for('static', filename='Ekow.png') }}" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .header-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      background-color: #4caf50; /* Green */
+      padding: 20px 0;
+    }
+    .header-container img {
+      width: 100px;
+      margin: 0 20px;
+      align-content: center;
+    }
+    .header {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      flex: 1; /* Allows it to take remaining space */
+    }
+    .cover-photo {
+      width: 100%;
+      height: 50vh; /* Adjusted height for large screens */
+      background-image: url("{{ url_for('static', filename='cover.jpg') }}");
+      background-size:100%;
+      background-position: center;
+    }
+    .profile {
+      margin-top: -75px; /* Half of the profile image height */
+      position: relative; /* Allows z-index positioning */
+      z-index: 1; /* Ensure profile image stays above cover photo */
+    }
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 5px solid ;
+      border-style: linear-gradient(to right, #4caf50 50%, #2196f3 50%);
+      border-image-slice: 1;
+      position: relative; /* Ensure profile image stays above cover photo */
+      z-index: 1; /* Ensure profile image stays above cover photo */
+    }
+    .chat-button {
+      margin-top: 20px;
+    }
+    .chat-button button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2196f3; /* Blue */
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .chat-button button:hover {
+      background-color: #0d47a1; /* Darker blue on hover */
+    }
+    .footer {
+      padding: 10px 0;
+    }
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: row;
+        
+      }
+      .header-container img {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+      }
+      .cover-photo {
+        height: 200px; /* Adjust height for smaller screens */
+      }
+      .profile {
+        margin-top: -50px; /* Adjusted margin for profile image */
+      }
+      .profile img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header-container">
+    <img src="{{ url_for('static', filename='Eduline.png') }}" alt="RAIDTECH EDULINE Logo" />
+    <div class="header">Ekow - Your Academic Resource Assistant</div>
+    <img src="{{ url_for('static', filename='passa.png') }}" alt="PASSSA-KNUST Logo" />
+  </div>
+
+  <div class="cover-photo"></div>
+
+  <div class="profile">
+    <img src="{{ url_for('static', filename='Ekow.png') }}" alt="Ekow's Picture" />
+  </div>
+
+  <div class="chat-button">
+    <a href="https://t.me/passsaacademicbot" target="_blank">
+      <button>Let's Chat</button>
+    </a>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <h2>Welcome....</h2>
+    <p>
+      RAIDTECH EDULINE, in collaboration with PASSSA-KNUST, presents Ekow,
+      your personal academic resource assistant. Ekow is here to help you
+      embrace the challenges of education and provide motivational support.
+    </p>
+    <p>Enjoy your time with Ekow!</p>
+  </div>
+
+  <div class="footer">
+    <p>&copy; RAIDTECH EDULINE <span id="currentYear"></span></p>
+  </div>
+
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

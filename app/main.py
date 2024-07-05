@@ -58,7 +58,7 @@ def hello_world():
 # Course feeder feature Code below
 #########################################################################################################################################################
 
-bot_name = "ekow-test"
+bot_name = "Ekow✍🏾"
 # Conversation states
 PROGRAM, LEVEL, SEMESTER, COURSE, RESOURCE_TYPE, FEEDBACK = range(6)
 
@@ -203,19 +203,17 @@ course_data = {
       "First Semester": [
         "Physiotherapy In Geriatrics",
         "Physiotherapy In Obstetrics and Gynecology",
-        "Community-Based Rehabilitation",
-        "Pediatric Physiotherapy",
-        "Ethics in Physiotherapy",
-        "Clinical Education IV",
-        "Dissertation I"
+        "Physiotherapy In Orthopedics",
+        "Physiotherapy In Pediatrics",
+        "Exercise Therapy",
+        "Orthotics, Prosthetics and Assistive Devices"
       ],
       "Second Semester": [
-        "Physiotherapy in Cardiorespiratory Conditions",
-        "Clinical Education V",
-        "Physiotherapy In Orthopedics",
-        "Physiotherapy in Medical Conditions",
-        "Physiotherapy in Neurological Conditions",
-        "Dissertation II"
+        "Neurorehabilitation",
+        "Cardiopulmonary Physiotherapy",
+        "Workplace Health Promotion",
+        "Physiotherapy in Medical and Surgical Conditions",
+        "Taping and Wrapping of Sports Injuriess"
       ]
     }
   },
@@ -246,24 +244,22 @@ course_data = {
     },
     "Level 200": {
       "First Semester": [
-        "Assessment Skills I",
-        "Introduction to Exercise Physiology",
-        "Psychological Aspects of Sports",
-        "Electrotherapy I",
-        "Safety Practices",
-        "Biochemistry for Sports and Exercise Metabolism",
         "Human Physiology II",
-        "Human Anatomy II"
+        "Safety Practices",
+        "Human Anatomy II",
+        "Biochemistry for Sports and Exercise Metabolism",
+        "Introduction to Therapeutics Modalities ",
+        "Lower Limb Sports Injuries Assessment",
+        "Drugs and Sports "
       ],
       "Second Semester": [
-        "Bioenergetics and Sports Nutrition",
-        "Sports and Exercise Physiology",
-        "Electrotherapy II",
-        "Aquatic Therapy",
+        "Upper Limb Sports Injuries Assessment",
         "Human Resources and Industrial Relation",
+        "Functional Anatomy for Physiotherapy and Sports Science",
+        "Sports and Exercise Physiology",
+        "Aquatic Therapy",
         "Emergency Health Care",
-        "Functional Anatomy for Sport and Exercise Science",
-        "Assessment Skills II"
+        "Bioenergetics and Sports Nutrition"
       ]
     },
     "Level 300": {
@@ -271,39 +267,38 @@ course_data = {
         "Statistics, Measurement and Evaluation",
         "Ghanaian Sign Language For Health Communication I",
         "Kinesiology",
-        "General Pathology",
-        "Advanced Exercise Physiology",
-        "Dermatology and Burns",
-        "Assessment Skills III",
+        "Spinal Assessment and Mobilizations",
+        "Principles of Exercise Prescription",
+        "Sports Aerodynamics",
+        "Pathology I",
         "Massage Therapy"
       ],
       "Second Semester": [
-        "Research Methods and Ethics",
+        "Ghanaian Sign Language For Health Communication II",
         "Pathokinesiology",
-        "Pharmacology in Sport and Exercise Science",
+        "Sports Injury Management",
         "Neuroanatomy",
-        "Rheumatology",
+        "Introduction to Orthopaedics and Trauma",
         "Clinical Biomechanics",
-        "Ghanaian Sign Language for Health Communication II"
+        "Systemic Pathology",
+        "Research Methods and Ethics"
       ]
     },
     "Level 400": {
       "First Semester": [
-        "Sport and Exercise in Geriatrics",
-        "Sport and Exercise in Obstetrics and Gynecology",
-        "Community-Based Rehabilitation",
-        "Pediatric Sport and Exercise",
-        "Ethics in Sport and Exercise Science",
-        "Clinical Education IV",
-        "Dissertation I"
+        "Exercise and Sports Rehabilitation",
+        "Orthotics, Prosthetics and Assistive Devices",
+        "Legal Issues In Sports",
+        "Exercise for Special Populations",
+        "Therapeutic Exercises",
+        "Strength and Conditioning Training"
       ],
       "Second Semester": [
-        "Sport and Exercise in Cardiorespiratory Conditions",
-        "Clinical Education V",
-        "Sport and Exercise in Orthopedics",
-        "Sport and Exercise in Medical Conditions",
-        "Sport and Exercise in Neurological Conditions",
-        "Dissertation II"
+        "Workplace Health Promotion",
+        "Neurorehabilitation",
+        "Taping and Wrapping of Sports Injuries",
+        "Obesity and Weight Management",
+        "Biomechanical Analysis of Movement Techniques"
       ]
     }
   },
@@ -334,70 +329,69 @@ course_data = {
     },
     "Level 200": {
       "First Semester": [
-        "Assessment Skills I",
-        "Introduction to Management Principles",
-        "Sports Marketing",
-        "Electrotherapy I",
+        "Introduction to Therapeutics Modalities ",
         "Safety Practices",
-        "Biochemistry for Sports and Exercise Metabolism",
+        "Drugs and Sports ",
+        "Contemporary Issues in Sports",
+        "Sports Tourism",
         "Human Physiology II",
         "Human Anatomy II"
       ],
       "Second Semester": [
-        "Bioenergetics and Sports Nutrition",
-        "Sports and Exercise Physiology",
-        "Electrotherapy II",
-        "Aquatic Therapy",
+        "Sports Development and Coaching Practicum",
+        "Sports Economics",
         "Human Resources and Industrial Relation",
         "Emergency Health Care",
-        "Functional Anatomy for Sports Management",
-        "Assessment Skills II"
+        "Sports and Exercise Physiology",
+        "Behaviour in Sporting Organizatione",
+        "Bioenergetics and Sports Nutrition",
+        "Talent Identification and Development"
       ]
     },
     "Level 300": {
       "First Semester": [
         "Statistics, Measurement and Evaluation",
         "Ghanaian Sign Language For Health Communication I",
-        "Kinesiology",
-        "General Pathology",
-        "Advanced Management Principles",
-        "Dermatology and Burns",
-        "Assessment Skills III",
-        "Massage Therapy"
+        "Fundamentals of Sports Coaching",
+        "Scientific Principles of Sports Training",
+        "Sports Psychology",
+        "Strategic Sports Development",
+        "Child Protection in Sports"
       ],
       "Second Semester": [
         "Research Methods and Ethics",
-        "Pathokinesiology",
-        "Pharmacology in Sports Management",
-        "Neuroanatomy",
-        "Rheumatology",
-        "Clinical Biomechanics",
-        "Ghanaian Sign Language for Health Communication II"
+        "Strategic Sports Marketing",
+        "Strategic Sports Management of Sports Organizations",
+        "Sports Ethics",
+        "Performance Analysis in Coaching",
+        "Professional Practices in Sports Management",
+        "Sports Facility Management",
+        "Critical Thinking in Sports"
       ]
     },
     "Level 400": {
       "First Semester": [
-        "Management in Geriatrics",
-        "Management in Obstetrics and Gynecology",
-        "Community-Based Rehabilitation",
-        "Pediatric Management",
-        "Ethics in Sports Management",
-        "Clinical Education IV",
-        "Dissertation I"
+        "Disability and Sports",
+        "Sports Governance",
+        "Legal Issues In Sports",
+        "Sports Logistics",
+        "Sports Event Management",
+        "Sports Business Communication",
+        "Sociology of Sports Development"
       ],
       "Second Semester": [
-        "Management in Cardiorespiratory Conditions",
-        "Clinical Education V",
-        "Management in Orthopedics",
-        "Management in Medical Conditions",
-        "Management in Neurological Conditions",
-        "Dissertation II"
+        "Sports Policy Development",
+        "Sports Financial Management",
+        "Sports Informatics and Analytics",
+        "Sports Entrepreneurship",
+        "Sports for Sustainable Development",
+        "Management of High Performance Sports"
       ]
     }
   }
 }
 
-    
+
 #BULK MESSAGING FEATURE
 
 ################################################################################################################################
